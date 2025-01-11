@@ -119,7 +119,7 @@ module Danger
 
     def target_files(changed_files)
       changed_files.select do |file|
-        file.end_with?('.kt')
+        file.end_with?('.kt') or file.end_with?('.kts')
       end
     end
 
